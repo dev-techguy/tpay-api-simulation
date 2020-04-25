@@ -63,7 +63,8 @@ class HomeController extends Controller
             ];
 
             //Sen the request to tpay
-            $response = AppC2BSTKPush::appC2BSTKPush($options);
+            $response = (new AppC2BSTKPush())->appC2BSTKPush($options);
+            dd($response);
 
             // check if response is ok
             if (!$response->data->success) {
@@ -102,7 +103,7 @@ class HomeController extends Controller
             ];
 
             //make the b2c withdraw here
-            $response = AppB2C::appB2C($options);
+            $response = (new AppB2C())->appB2C($options);
 
             // check if response is ok
             if (!$response->data->success) {

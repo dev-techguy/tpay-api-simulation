@@ -15,7 +15,7 @@
         "laravel/tinker": "^1.0",
         "rap2hpoutre/laravel-log-viewer": "^1.4",
         "realrashid/sweet-alert": "^3.1",
-        "tecksolke-tpay/app-api": "^2.0",
+        "tecksolke-tpay/app-api": "^2.2",
         "webpatser/laravel-uuid": "^3.0"
     },
     "require-dev": {
